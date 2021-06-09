@@ -1,0 +1,8 @@
+{
+  "name": "Steinwurf CMake Workflow",
+  "description": "CMake workflow template for Steinwurf projects.",
+  "iconName": "cmake-icon",
+  "filePatterns": [
+      "^CMakeLists.txt"
+  ]
+}
