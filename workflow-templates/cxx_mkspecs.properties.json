@@ -1,0 +1,9 @@
+{
+  "name": "Steinwurf C++ Make Specs Workflow",
+  "description": "C++ Make specs workflow template for Steinwurf projects.",
+  "iconName": "cxx-icon",
+  "filePatterns": [
+      "^waf",
+      "^wscript"
+  ]
+}
