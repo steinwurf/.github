@@ -1,0 +1,8 @@
+{
+    "name": "Steinwurf Clang-format Workflow",
+    "description": "Clang-format workflow template for Steinwurf projects.",
+    "iconName": "clang-icon",
+    "filePatterns": [
+        "^.clang-format"
+    ]
+  }
