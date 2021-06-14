@@ -1,0 +1,9 @@
+{
+    "name": "Steinwurf Valgrind Workflow",
+    "description": "Valgrind workflow template for Steinwurf projects.",
+    "iconName": "valgrind-icon",
+    "filePatterns": [
+        "^waf",
+        "^wscript"
+    ]
+  }

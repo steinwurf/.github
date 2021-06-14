@@ -1,0 +1,9 @@
+{
+    "name": "Steinwurf No Assertions Workflow",
+    "description": "No Assertions workflow template for Steinwurf projects.",
+    "iconName": "forbidden-icon",
+    "filePatterns": [
+        "^waf",
+        "^wscript"
+    ]
+  }
