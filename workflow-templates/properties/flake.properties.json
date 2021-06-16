@@ -1,5 +1,8 @@
 {
     "name": "Steinwurf Flake Workflow",
     "description": "Flake workflow template for Steinwurf python projects.",
-    "iconName": "flake-icon"
+    "iconName": "flake-icon",
+    "categories": [
+        "Python"
+    ]
 }

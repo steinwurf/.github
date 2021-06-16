@@ -5,5 +5,8 @@
   "filePatterns": [
       "^waf",
       "^wscript"
+  ],
+  "categories": [
+      "C++"
   ]
 }

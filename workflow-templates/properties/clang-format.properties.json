@@ -4,5 +4,9 @@
     "iconName": "clang-icon",
     "filePatterns": [
         "^.clang-format"
+    ],
+    "categories": [
+        "C++",
+        "C"
     ]
 }

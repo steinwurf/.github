@@ -4,5 +4,9 @@
   "iconName": "cmake-icon",
   "filePatterns": [
       "^CMakeLists.txt"
+  ],
+  "categories": [
+      "C++",
+      "C"
   ]
 }
