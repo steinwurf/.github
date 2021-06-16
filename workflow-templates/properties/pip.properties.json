@@ -1,0 +1,5 @@
+{
+    "name": "Steinwurf Pip Workflow",
+    "description": "Pip workflow template for Steinwurf python projects.",
+    "iconName": "pypi-icon"
+}

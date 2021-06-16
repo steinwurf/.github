@@ -1,0 +1,9 @@
+{
+    "name": "Steinwurf Python Waf Workflow",
+    "description": "Waf workflow template for Steinwurf python projects.",
+    "iconName": "python-icon",
+    "filePatterns": [
+        "^waf",
+        "^wscript"
+    ]
+}
