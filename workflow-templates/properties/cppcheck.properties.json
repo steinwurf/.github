@@ -1,0 +1,10 @@
+{
+    "name": "Steinwurf Cppcheck Workflow",
+    "description": "Cppcheck workflow template for Steinwurf C++ projects.",
+    "iconName": "clang-icon",
+    "filePatterns": [],
+    "categories": [
+        "C++",
+        "C"
+    ]
+}
