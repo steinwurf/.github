@@ -15,7 +15,12 @@ jobs:
   # NDEBUG compilation
   ndebug:
     name: No Assertions
-    runs-on: [self-hosted, Linux]
+    runs-on: [self-hosted, docker]
+    container:
+      image: steinwurf/gcc:9.3.0
+      options: --user 0:0
+      volumes:
+        - /home/buildbot/.ssh:/root/.ssh
     steps:
       - name: Checkout
         uses: actions/checkout@v2

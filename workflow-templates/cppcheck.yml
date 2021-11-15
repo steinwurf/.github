@@ -5,9 +5,14 @@ on:
     - cron: "0 1 * * *" # 3 AM CET
   push:
 jobs:
-  build:
-    name: cppcheck
-    runs-on: [self-hosted, linux]
+  docker_check:
+    runs-on: [self-hosted, docker]
+    container:
+      image: steinwurf/cppcheck:2.4.1
+      options: --user 0:0
+      volumes:
+        - /home/buildbot/.ssh:/root/.ssh
+    name: Cppcheck 2.4.1
     steps:
       - name: Checkout
         uses: actions/checkout@v2

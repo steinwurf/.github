@@ -10,8 +10,10 @@ jobs:
     name: ClangFormat
     runs-on: [self-hosted, docker]
     container:
-      image: fifty2technology/clang-format
+      image: steinwurf/clang-format:12
       options: --user 0:0
+      volumes:
+        - /home/buildbot/.ssh/root/.ssh
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
