@@ -8,7 +8,7 @@ jobs:
   docker_check:
     runs-on: [self-hosted, docker]
     container:
-      image: steinwurf/cppcheck:2.4.1
+      image: steinwurf/cppcheck-2.4.1
       options: --user 0:0
       volumes:
         - /home/buildbot/.ssh:/root/.ssh

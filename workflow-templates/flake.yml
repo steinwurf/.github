@@ -10,7 +10,7 @@ jobs:
     name: Flake8 Syntax Check
     runs-on: [self-hosted, docker]
     container:
-      image: steinwurf/flake8:4
+      image: steinwurf/flake8-4:1.0.0
       options: --user 0:0
       volumes:
         - /home/buildbot/.ssh:/root/.ssh

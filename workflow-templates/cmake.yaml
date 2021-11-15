@@ -41,13 +41,13 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - container: steinwurf/cmake:3.16.3-gcc
+          - container: steinwurf/cmake-3.16.3-gcc:1.0.0
             name: Cmake 3.16.3 (GCC)
-          - container: steinwurf/cmake:3.18.4-gcc
+          - container: steinwurf/cmake-3.18.4-gcc:1.0.0
             name: Cmake 3.18.4 (GCC)
-          - container: steinwurf/cmake:3.16.3-clang
+          - container: steinwurf/cmake-3.16.3-clang:1.0.0
             name: Cmake 3.16.3 (Clang)
-          - container: steinwurf/cmake:3.18.4-clang
+          - container: steinwurf/cmake-3.18.4-clang:1.0.0
             name: Cmake 3.18.4 (Clang)
     runs-on: [self-hosted, docker]
     name: ${{ matrix.config.name }}

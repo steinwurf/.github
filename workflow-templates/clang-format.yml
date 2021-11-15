@@ -10,7 +10,7 @@ jobs:
     name: ClangFormat
     runs-on: [self-hosted, docker]
     container:
-      image: steinwurf/clang-format:12
+      image: steinwurf/clang-format-12:1.0.0
       options: --user 0:0
       volumes:
         - /home/buildbot/.ssh/root/.ssh
