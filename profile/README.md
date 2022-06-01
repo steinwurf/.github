@@ -1,4 +1,4 @@
-[![Steinwurf's GitHub Banner](/assets/banner.png)](https://steinwurf.com)
+[![Steinwurf's GitHub Banner Black](/assets/banner_black.png#gh-light-mode-only)![Steinwurf's GitHub Banner White](/assets/banner_white.png#gh-dark-mode-only)](https://steinwurf.com)
 
 Hi there, We're Steinwurf 👋
 ============================
