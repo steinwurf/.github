@@ -1,0 +1,12 @@
+{
+  "name": "C++ External",
+  "description": "Nightly and on-demand CI for external C++ projects using Waf over GCC, Clang and Zig on Linux, macOS & Windows.",
+  "iconName": "tools",
+  "categories": ["CI", "C++"],
+  "filePatterns": [
+    "**/*.cpp",
+    "**/*.hpp",
+    "**/*.c",
+    "**/*.h"
+  ]
+}

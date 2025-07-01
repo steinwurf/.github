@@ -1,6 +1,6 @@
 {
   "name": "C++ Internal",
-  "description": "Nightly and on-demand CI for C++ projects using Waf over GCC, Clang and Zig on Linux, macOS & Windows.",
+  "description": "Nightly and on-demand CI for internal C++ projects using Waf over GCC, Clang and Zig on Linux, macOS & Windows.",
   "iconName": "tools",
   "categories": ["CI", "C++"],
   "filePatterns": [
