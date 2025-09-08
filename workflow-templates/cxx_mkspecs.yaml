@@ -43,15 +43,24 @@ jobs:
     container:
       image: ${{ matrix.config.container }}
       options: --user 0:0
-      volumes:
-        - /home/buildbot/.ssh:/root/.ssh
     steps:
       - name: Install SSH client
         run: apt update && apt -y install openssh-client
       - name: Checkout source code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Configure Github Authentication
+        run: |
+          git config --global credential.helper 'store'
+          git credential approve <<EOF
+          protocol=https
+          host=github.com
+          username=x-access-token
+          password=${{ secrets.GH_ACCESS_TOKEN }}
+          EOF
       - name: Waf Configure
-        run: python3 waf configure --git_protocol=git@ ${{ matrix.config.cxx_mkspec }} $EXTRA_RESOLVE_OPTIONS
+        run: python3 waf configure --git_protocol=https:// ${{ matrix.config.cxx_mkspec }} $EXTRA_RESOLVE_OPTIONS
       - name: Waf Build
         run: |
           echo "::add-matcher::.github/gcc-problem-matcher.json"
