@@ -127,7 +127,7 @@ jobs:
       - name: Waf Build
         run: python waf build
       - name: Waf Run Tests
-        run: python3 waf --run_tests
+        run: python waf --run_tests
   clang-format:
     timeout-minutes: 45
     name: Clang-Format
